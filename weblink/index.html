@@ -1,0 +1,114 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Modulation of septo-hippocampal theta activity by GABAA receptors: An experimental and computational approach</title>
+
+    <meta name="Description" content="Support material to the research paper -- Pyramidal cell model">
+    <meta name="Author" content="M. Hajós, W.E. Hoffmann, G. Orbán, T. Kiss, P. Érdi">
+    <meta http-equiv="Content-Language" content="English">
+    <meta name="Date" content="09/02/04">
+    <meta name="generator" content="Bluefish pre0.7">
+    <meta name="Keywords" content="hippocampus, theta, oscillation, CA1, basket cell, pyramidal cell, interneuron, O-LM neuron, septum, GABA, model, GENESIS, receptor, anxiety, allosteric modulators, EEG">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Updated" content="Mon Feb  9 11:46:32 2004 ">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <link rel="STYLESHEET" href="index_files/b.css"></head>
+
+  <body>
+<h2>Note from the ModelDB Administrator:  The below is a copy of
+<a href=
+"http://geza.kzoo.edu/theta/theta.html">http://geza.kzoo.edu/theta/theta.html</a> made on December 1st, 2008.</h2>
+
+    <center>
+      <table border="0" cellpadding="10" cellspacing="0" width="800">
+	  <tbody><tr>
+	      <td valign="top" width="760">
+	      <center>
+
+	          <h1>Online supplementary material to</h1>
+
+	          <h2>Modulation of septo-hippocampal theta activity
+	          by GABAA receptors: An experimental and
+	          computational approach</h2>
+
+		  <h2>Mihaly Hajos<sup>1</sup>, William E. Hoffmann<sup>1</sup>, Gergo Orban<sup>2</sup>,
+		  Tamas Kiss<sup>2</sup>, Peter Erdi<sup>2,3</sup></h2>
+
+		  <h3><sup>1</sup><a href="http://www.pfizer.com/main.html">Department of Neuroscience, Global
+		  Research and Development, Pfizer Inc., Groton, CT</a><br>
+
+		  <sup>2</sup><a href="http://www.rmki.kfki.hu/biofiz/cneuro">Dept. Biophysics, KFKI Research
+		  Institute for Particle and Nuclear Physics of the
+		  Hungarian Academy of Sciences, Budapest, Hungary</a><br>
+
+		  <sup>3</sup><a href="http://www.kzoo.edu/physics/ccss">Center for Complex Systems Studies,
+		  Kalamazoo College, Kalamazoo, MI</a></h3>
+
+ </center>
+
+
+<br><br><br>
+<h3>ABSTRACT of the Neuroscience paper</h3>
+ <p align="justify">
+Theta frequency oscillation of the septo-hippocampal system has been
+considered as a prominent activity associated with cognitive function
+and affective processes.  It is well documented that anxiolytic drugs
+diminish septo-hippocampal oscillatory theta activity contributing to
+their either therapeutic or unwanted side effects.  In the present
+experiments we applied a combination of computational and
+physiological techniques to explore the functional role of GABAA
+receptors in theta oscillation.  In electrophysiological experiments
+extracellular single unit recordings were performed from medial
+septum/diagonal band of Broca (MS/DB) with simultaneous hippocampal
+(CA1) EEG recordings from anesthetized rats.  Neurotransmission at
+GABAA receptors were modulated by means of pharmacological tools: the
+actions of the GABAA receptor positive allosteric modulator diazepam
+and inverse agonist/negative allosteric modulator FG-7142 were
+evaluated on septo-hippocampal activity.  Systemic administration of
+diazepam inhibited, whereas FG-7142 enhanced theta oscillation of
+MS/DB neurons and hippocampal EEG theta activity.  In parallel to
+these experimental observations, a computational model has been
+constructed by implementing a MS/DB GABA neuron model with a
+three-neuron population hippocampal CA1 model (including oriens and
+basket interneurons and pyramidal cells; each cell type modelled by
+multicompartmental techniques).  This connectivity made the network
+capable of simulating the responses of the septo-hippocampal circuitry
+to the modulation of GABAA transmission, and the presently described
+computational model proved suitable to reveal several aspects of
+pharmacological modulation of GABAA receptors.  In addition,
+computational findings indicated different roles of distinctively
+located GABAA receptors in theta generation.
+</p>
+<br>
+
+<h3>Purpose of these pages</h3>
+<p align="justify">
+These pages were created to supply the Reader with details: equations,
+parameter ranges, computer simulations scripts used for simulations
+published in the article. Scripts are written for the <a href="http://www.genesis-sim.org/GENESIS/">GENESIS</a> simulator
+program and are available piece-by-piece from cell description pages
+or as a single tarball from the <a href="http://geza.kzoo.edu/theta/downloads.html">download</a> page.
+</p>
+<p align="justify">
+We suggest to first browse through the given <a href="http://geza.kzoo.edu/theta/references.html">references</a> as they are of great importance
+in the understanding of our model. By clicking on different parts of
+the image below equations and parameters describing the selected
+component of the model are available.
+</p>
+
+<img src="index_files/network" alt="Skeleton network model" usemap="#network" border="0">
+
+<map name="network"><area shape="rect" coords="250,60,340,320" href="http://geza.kzoo.edu/theta/b.html" alt="Basket interneuron"><area shape="rect" coords="0,400,330,460" href="http://geza.kzoo.edu/theta/o.html" alt="O-LM interneuron"><area shape="rect" coords="290,580,380,670" href="http://geza.kzoo.edu/theta/g.html" alt="MSGABA interneuron"><area shape="rect" coords="480,20,560,450" href="http://geza.kzoo.edu/theta/p.html" alt="Pyramidal cell"><area shape="rect" coords="100,480,280,680" href="http://geza.kzoo.edu/theta/s.html" alt="Synaptic structure"><area shape="rect" coords="340,280,470,420" href="http://geza.kzoo.edu/theta/s.html" alt="Synaptic structure"><area shape="rect" coords="120,40,240,400" href="http://geza.kzoo.edu/theta/s.html" alt="Synaptic structure"><area shape="rect" coords="340,100,470,400" href="http://geza.kzoo.edu/theta/s.html" alt="Synaptic structure"></map>
+<br>
+<hr>
+<font size="2">
+<center><a href="http://geza.kzoo.edu/theta/p.html">[Pyramidal cell]</a> - <a href="http://geza.kzoo.edu/theta/b.html">[Basket interneuron]</a> - <a href="http://geza.kzoo.edu/theta/o.html">[O-LM interneuron]</a> - <a href="http://geza.kzoo.edu/theta/g.html">[MSGABA interneuron]</a> - <a href="http://geza.kzoo.edu/theta/s.html">[Synaptic Structure]</a> - <a href="http://geza.kzoo.edu/theta/references.html">[References]</a> - <a href="http://geza.kzoo.edu/theta/downloads.html">[Downloads]</a></center>
+</font>
+<br>
+<hr align="left" width="250">
+<font size="2"><i>
+Please send your questions and comments to:<br>Tamas Kiss at <a href="mailto:bognor@sunserv.kfki.hu">bognor@sunserv.kfki.hu</a>
+</i></font>
+	    </td>
+	  </tr>
+      </tbody></table>
+    </center>
+</body></html>
